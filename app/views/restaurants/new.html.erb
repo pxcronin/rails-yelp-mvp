@@ -1,0 +1,14 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/restaurants">Home</a>
+  <a class="navbar-brand" href="/restaurants/new">Add Restaurant</a>
+</nav>
+  
+<div class="container">
+  <%= simple_form_for(@restaurant) do |f| %>
+    <%= f.input :name %>
+    <%= f.input :address %>
+    <%= f.input :phone_number %>
+    <%= f.input :category %>
+    <%= f.submit %>
+  <% end %>
+</div>

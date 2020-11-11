@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light">
+  <a class="navbar-brand" href="/restaurants">Home</a>
+  <a class="navbar-brand" href="/restaurants/new">Add Restaurant</a>
+</nav>
+  
+<div class="container">
+  <h1>Restaurants</h1>
+  <% @restaurants.each do |r| %>
+    <h3><%= link_to "#{r.name}", restaurant_path(r) %></h3>
+  <% end %>
+</div>
